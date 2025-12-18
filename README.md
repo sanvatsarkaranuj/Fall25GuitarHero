@@ -326,7 +326,7 @@ END IF;
 
 ### Major Modifications/Logic Implementations
 
-###`vga_top.vhd` - Top-Level Integration
+`vga_top.vhd` - Top-Level Integration
 
 The top-level module connects all components and handles mode selection.
 
@@ -396,7 +396,7 @@ PORT MAP(
 
 ---
 
-###`ball.vhd` (noteColumn) - Note Column Logic
+`ball.vhd` (noteColumn) - Note Column Logic
 
 This module manages falling notes using a 600-bit shift register and draws circular notes.
 
@@ -492,7 +492,7 @@ Instead of checking all 600 rows (which caused 20+ minute synthesis times), we o
 
 ---
 
-###`songPlayer.vhd` - Automatic Song Playback
+`songPlayer.vhd` - Automatic Song Playback
 
 This module plays a pre-programmed 256-step song pattern.
 
@@ -574,7 +574,7 @@ END IF;
 
 ---
 
-###`toneGenerator.vhd` - PWM Audio Generation
+`toneGenerator.vhd` - PWM Audio Generation
 
 This module generates square wave audio via PWM when notes are hit.
 
@@ -635,7 +635,7 @@ END IF;
 
 ---
 
-###`buttonTracker.vhd` - Hit Detection & Scoring
+`buttonTracker.vhd` - Hit Detection & Scoring
 
 This module detects when a player successfully hits a note.
 
@@ -700,7 +700,7 @@ end if;
 
 ---
 
-###`vgaCombiner.vhd` - Graphics Rendering
+`vgaCombiner.vhd` - Graphics Rendering
 
 This module combines all visual elements with a priority-based rendering system.
 
