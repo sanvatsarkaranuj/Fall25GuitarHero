@@ -7,8 +7,8 @@ This project is a recreation of the classic Guitar Hero games implemented on the
 <img width="612" height="448" alt="Image" src="https://github.com/user-attachments/assets/a8c2b02a-7f0f-4320-a923-29bcb2b0c1c5" />
 
 ### Gameplay Demo
-![Song Mode Demo](images/song_mode.gif)
 
+https://github.com/user-attachments/assets/097b2fa6-f99b-4719-93e8-59f337e5834c
 
 ## 1. Project Overview
 
