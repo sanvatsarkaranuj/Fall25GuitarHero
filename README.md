@@ -245,22 +245,9 @@ END toneGenerator;
 
 This project builds upon the Pong lab, particularly the ball.vhd module, as well as the ideas explored in the Fall 2024 Guitar Hero project highlighted in the project rubric. We made extensive modifications to stater code files, as well as drafting our own key modules in order to create a fully functional Guitar Hero gameplay experience.
 
-### Summary of Changes
-
-| Component | Original | Our Version |
-|-----------|----------|-------------|
-| Note Columns | 2 working | 4 fully functional |
-| Note Shape | Rectangular | Circular |
-| Song Mode | Not implemented | Full automatic playback |
-| Audio | None | PWM tones (C major chord) |
-| Visual Effects | Basic white background | Flames, dark theme, hit flashes |
-| Mode Selection | None | SW0 toggle for manual/song mode |
-| Target Buttons | Ovals | Perfect circles with press feedback |
-
-### New Files Created
 
 #### `songPlayer.vhd` - Automatic Song Playback
-This module was created from scratch to enable automatic song mode:
+This module was created  to enable automatic song mode:
 
 ```vhdl
 -- Song patterns stored as 256-bit constants
@@ -287,7 +274,7 @@ END IF;
 **Key Feature:** Notes are held HIGH for 5.2ms to ensure the note column samples them (it samples every 2.6ms).
 
 #### `toneGenerator.vhd` - PWM Audio Generation
-Created from scratch to provide audio feedback:
+This module was created to provide audio feedback:
 
 ```vhdl
 -- Musical note frequencies (C major chord)
@@ -305,37 +292,8 @@ ELSE
 END IF;
 ```
 
-### Major Modifications to Existing Files
-
-#### `ball.vhd` - Complete Rewrite for Circular Notes
-
-**Original:** Rectangular notes, no disappear logic
-**Modified:** Circular notes that vanish after passing target zone
-
-```vhdl
--- Circular note drawing (replaces rectangular)
-FOR offset IN -NOTE_RADIUS TO NOTE_RADIUS LOOP
-    row_check := pixel_row_int + offset;
-    IF note_col(row_check) = '1' THEN
-        dx := pixel_col_int - horiz_int;
-        dy := offset;
-        dist_sq := dx * dx + dy * dy;
-        IF dist_sq <= radius_sq THEN
-            note_on <= '1';  -- Inside circle
-        END IF;
-    END IF;
-END LOOP;
-
--- Notes disappear after target zone
-IF pixel_row_int < NOTE_DISAPPEAR_Y THEN
-    -- Draw note
-END IF;
-```
-
-#### `vgaCombiner.vhd` - Enhanced Graphics Engine
-
-**Original:** Simple white background
-**Modified:** Dark theme with animated flames, lane dividers, and hit effects
+#### `vgaCombiner.vhd` - Graphics Processor
+This module was created to manage the visual effects:
 
 ```vhdl
 -- Animated flame effect (cycles through 8 phases)
@@ -362,9 +320,33 @@ ELSE
 END IF;
 ```
 
+### Major Modifications to Existing Files
+
+#### `ball.vhd` - Rewrite for Four Circular Notes
+
+```vhdl
+-- Circular note drawing
+FOR offset IN -NOTE_RADIUS TO NOTE_RADIUS LOOP
+    row_check := pixel_row_int + offset;
+    IF note_col(row_check) = '1' THEN
+        dx := pixel_col_int - horiz_int;
+        dy := offset;
+        dist_sq := dx * dx + dy * dy;
+        IF dist_sq <= radius_sq THEN
+            note_on <= '1';  -- Inside circle
+        END IF;
+    END IF;
+END LOOP;
+
+-- Notes disappear after target zone
+IF pixel_row_int < NOTE_DISAPPEAR_Y THEN
+    -- Draw note
+END IF;
+```
+
 #### `vga_top.vhd` - Mode Selection and Audio Integration
 
-**Added:** Mode switch, song player integration, audio output
+Mode switch, song player integration, audio output, establishes module-hardware compatibility 
 
 ```vhdl
 -- Mode selection multiplexer
@@ -384,9 +366,9 @@ PORT MAP(
 AUD_SD <= '1';  -- Enable audio amplifier
 ```
 
-#### `vga_top.xdc` - New Pin Assignments
+#### `vga_top.xdc` - Pin Assignments
 
-**Added:** Mode switch, debug LEDs, audio output pins
+Mode switch, debug LEDs, audio output pins, scoreboard
 
 ```tcl
 ## Mode Switch
