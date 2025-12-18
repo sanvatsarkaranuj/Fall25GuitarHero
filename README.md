@@ -16,7 +16,7 @@ Our project aims to recreate the classic Guitar Hero experience by attempting to
 
 ### References: Original Guitar Hero and Past Labs/Projects
 
-![Guitar Hero Reference](images/guitar_hero_reference.jpg)
+![Image](https://github.com/user-attachments/assets/06480f36-90ae-4178-9232-adf2df269e99)
 
 ### Key Features
 
