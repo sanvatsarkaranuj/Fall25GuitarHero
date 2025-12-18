@@ -395,8 +395,6 @@ PORT MAP(
 
 This module manages falling notes using a 600-bit shift register and draws circular notes.
 
-![Note Column Architecture](images/block_diagram_notecolumn.png)
-
 #### Key Constants
 
 ```vhdl
