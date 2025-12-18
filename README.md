@@ -133,24 +133,7 @@ Download all source files from this repository:
 
 ### Block Diagram
 
-```
-                        ┌─────────────────────────────────┐
-                        │           vga_top               │
-                        │                                 │
-     Buttons ───────────┼──▶ noteColumn 1 ──▶ Colors ────┼──▶ VGA
-     Keypad ────────────┼──▶ noteColumn 2 ──▶            │
-     Switch ────────────┼──▶ noteColumn 3 ──▶ Combiner ──┼──▶ Display
-     Clock ─────────────┼──▶ noteColumn 4 ──▶            │
-                        │          │                      │
-                        │          ▼                      │
-                        │   buttonTrackers ──▶ Score ────┼──▶ 7-Segment
-                        │          │                      │
-                        │          ▼                      │
-                        │   toneGenerator ───────────────┼──▶ Audio
-                        │                                 │
-                        │   songPlayer ──▶ Note Patterns  │
-                        └─────────────────────────────────┘
-```
+<img width="2370" height="1785" alt="Image" src="https://github.com/user-attachments/assets/84433b6a-739f-437f-9daa-5292d0e380b0" />
 
 ### Module Overview
 
