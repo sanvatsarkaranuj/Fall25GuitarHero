@@ -42,8 +42,6 @@ The goal of the game is to match the rythm of the track and catch the notes at t
 - Catch the notes with the keypad to score points
 - Press BTNC again to restart after the song ends
 
----
-
 ## 2. Expected Behavior
 
 1. **Notes spawn** at the top of the screen (manually via buttons, or automatically via song mode)
