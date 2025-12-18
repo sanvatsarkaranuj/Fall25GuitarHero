@@ -120,7 +120,7 @@ Download all source files from this repository:
 
 1. Connect VGA cable from board to monitor
 2. Connect Pmod keypad to JA header
-3. (Optional) Connect speaker to audio jack
+3. Connect speaker to audio jack
 4. Power on the board via USB
 
 ### Step 5: Play!
