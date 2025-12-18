@@ -496,7 +496,6 @@ This module plays a pre-programmed 256-step song pattern.
 Patterns are stored as 256-bit constants (64 hex characters each):
 
 ```vhdl
--- "Ode to Joy" adapted for 4 notes
 CONSTANT SONG_COL1 : STD_LOGIC_VECTOR(255 DOWNTO 0) := 
     X"00000000000000008080000000008080808000000000808080800000000080FF";
 CONSTANT SONG_COL2 : STD_LOGIC_VECTOR(255 DOWNTO 0) := 
@@ -889,7 +888,7 @@ If given more time, we would implement:
 ### Emre Cosgun
 - Designed `songPlayer.vhd` (automatic song playback)
 - Designed `toneGenerator.vhd` (PWM audio generation)
-- Created song patterns ("Ode to Joy" adaptation)
+- Created song patterns 
 - GitHub documentation and README
 
 ### Joint Effort
