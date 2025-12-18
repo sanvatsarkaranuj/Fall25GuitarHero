@@ -38,7 +38,7 @@ The goal of the game is to match the rythm of the track and catch the notes at t
 
 **When SW0 is ON (Song Mode):**
 - Press BTNC to start the automatic song
-- Notes fall automatically in a musical pattern ("Ode to Joy")
+- Notes fall automatically in a musical pattern
 - Catch the notes with the keypad to score points
 - Press BTNC again to restart after the song ends
 
