@@ -6,15 +6,9 @@ This project is a recreation of the classic Guitar Hero games implemented on the
 
 ![Guitar Hero Logo](images/poster.png)
 
-## 🎮 Project Demo
-
-### Song Mode Gameplay
+### Gameplay Demo
 ![Song Mode Demo](images/song_mode.gif)
 
-### Manual Mode Gameplay  
-![Manual Mode Demo](images/manual_mode.gif)
-
----
 
 ## 1. Project Overview
 
