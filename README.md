@@ -324,8 +324,9 @@ ELSE
 END IF;
 ```
 
-### Major Modifications to Existing Files
-### 8.1 `vga_top.vhd` - Top-Level Integration
+### Major Modifications/Logic Implementations
+
+###`vga_top.vhd` - Top-Level Integration
 
 The top-level module connects all components and handles mode selection.
 
@@ -395,7 +396,7 @@ PORT MAP(
 
 ---
 
-### 8.2 `ball.vhd` (noteColumn) - Note Column Logic
+###`ball.vhd` (noteColumn) - Note Column Logic
 
 This module manages falling notes using a 600-bit shift register and draws circular notes.
 
@@ -487,11 +488,11 @@ BEGIN
 END PROCESS;
 ```
 
-**Why this is efficient:** Instead of checking all 600 rows (which caused 20+ minute synthesis times), we only check ±18 rows around the current pixel. This reduces iterations from 600 to 37.
+Instead of checking all 600 rows (which caused 20+ minute synthesis times), we only check ±18 rows around the current pixel. This reduces iterations from 600 to 37.
 
 ---
 
-### 8.3 `songPlayer.vhd` - Automatic Song Playback (NEW)
+###`songPlayer.vhd` - Automatic Song Playback
 
 This module plays a pre-programmed 256-step song pattern.
 
@@ -547,7 +548,7 @@ IF tempo_rising THEN
 END IF;
 ```
 
-**Why 5.2ms?** The `noteColumn` samples its input every 2^18 cycles (2.6ms). By holding the note for 5.2ms, we guarantee at least one sample.
+The `noteColumn` samples its input every 2^18 cycles (2.6ms). By holding the note for 5.2ms, we guarantee at least one sample.
 
 #### State Machine
 
@@ -573,7 +574,7 @@ END IF;
 
 ---
 
-### 8.4 `toneGenerator.vhd` - PWM Audio Generation (NEW)
+###`toneGenerator.vhd` - PWM Audio Generation
 
 This module generates square wave audio via PWM when notes are hit.
 
@@ -634,7 +635,7 @@ END IF;
 
 ---
 
-### 8.5 `buttonTracker.vhd` - Hit Detection & Scoring
+###`buttonTracker.vhd` - Hit Detection & Scoring
 
 This module detects when a player successfully hits a note.
 
@@ -699,7 +700,7 @@ end if;
 
 ---
 
-### 8.6 `vgaCombiner.vhd` - Graphics Rendering
+###`vgaCombiner.vhd` - Graphics Rendering
 
 This module combines all visual elements with a priority-based rendering system.
 
@@ -843,7 +844,7 @@ PORT MAP(
 AUD_SD <= '1';  -- Enable audio amplifier
 ```
 
-#### `vga_top.xdc` - Pin Assignments
+###`vga_top.xdc` - Pin Assignments
 
 Mode switch, debug LEDs, audio output pins, scoreboard
 
@@ -863,8 +864,6 @@ set_property -dict { PACKAGE_PIN N14 IOSTANDARD LVCMOS33 } [get_ports { LED[3] }
 ```
 
 ---
-
-## Main Processes and Code Logic
 
 ## 8. Challenges and Solutions
 
