@@ -866,26 +866,17 @@ AUD_SD <= '1';  -- Enable amplifier
 
 ---
 
-## 9. Timing Parameters
+## 9. Future Improvements
 
-| Parameter | Value | Description |
-|-----------|-------|-------------|
-| System Clock | 100 MHz | Board oscillator |
-| Pixel Clock | 40 MHz | VGA timing |
-| Note Fall Speed | 2^18 cycles (~2.6ms) | Per-pixel movement |
-| Song Tempo | 2^23 cycles (~84ms) | Per-beat timing |
-| Note Pulse Duration | 2^19 cycles (~5.2ms) | Signal hold time |
-| Hit Zone | Rows 550-580 | 30-pixel window |
-| Column Positions | 160, 320, 480, 640 | X coordinates |
+If given more time, we would implement:
 
-### Musical Notes (Audio)
-
-| Column | Color | Note | Frequency | PWM Divider |
-|--------|-------|------|-----------|-------------|
-| 1 | Green | C4 | 262 Hz | 190,839 |
-| 2 | Red | E4 | 330 Hz | 151,515 |
-| 3 | Purple | G4 | 392 Hz | 127,551 |
-| 4 | Blue | C5 | 523 Hz | 95,602 |
+1. **More Songs** - Add song selection via switches
+2. **Difficulty Levels** - Adjustable note speed
+3. **Miss Detection** - Penalty for missed notes
+4. **Combo System** - Score multiplier for consecutive hits
+5. **Background Music** - Full audio track playback
+6. **Better Graphics** - Sprites instead of simple shapes
+7. **Two-Player Mode** - Split screen competition
 
 ---
 
@@ -920,16 +911,3 @@ AUD_SD <= '1';  -- Enable amplifier
 | Final Week | Testing, documentation, presentation |
 
 ---
-
-## 11. Future Improvements
-
-If given more time, we would implement:
-
-1. **More Songs** - Add song selection via switches
-2. **Difficulty Levels** - Adjustable note speed
-3. **Miss Detection** - Penalty for missed notes
-4. **Combo System** - Score multiplier for consecutive hits
-5. **Background Music** - Full audio track playback
-6. **Better Graphics** - Sprites instead of simple shapes
-7. **Two-Player Mode** - Split screen competition
-
