@@ -1,6 +1,6 @@
 # CPE 487: Final Project - Guitar Hero
 
-**By: Anuj Sanvatsarkar and Emre Cosgun
+By Anuj Sanvatsarkar and Emre Cosgun
 
 This project is a recreation of the classic Guitar Hero games implemented on the Nexys A7-100T FPGA using VHDL, featuring automatic song playback and animated visual effects.
 
