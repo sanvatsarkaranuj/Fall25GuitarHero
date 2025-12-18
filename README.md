@@ -77,30 +77,6 @@ The goal of the game is to match the rythm of the track and catch the notes at t
   
 ![Image](https://github.com/user-attachments/assets/53574b85-e8af-4d09-97da-558682b76f4f)
 
-- Hardware Connection Diagram
-
-```
-┌─────────────────────────────────────────────────────────────┐
-│                      Nexys A7-100T                          │
-│                                                             │
-│   ┌─────────┐      ┌─────────┐      ┌─────────────────┐    │
-│   │ Keypad  │─────▶│   JA    │      │   VGA Output    │────┼──▶ Monitor
-│   │ (Pmod)  │      │ Header  │      │   (800×600)     │    │
-│   └─────────┘      └─────────┘      └─────────────────┘    │
-│                                                             │
-│   ┌─────────┐      ┌─────────────┐   ┌────────────────┐    │
-│   │ Buttons │      │ 7-Segment   │   │  Audio Jack    │────┼──▶ Speaker
-│   │ (5x)    │      │ Display     │   │  (PWM)         │    │
-│   └─────────┘      └─────────────┘   └────────────────┘    │
-│                                                             │
-│   ┌─────────┐                                              │
-│   │  SW0    │  Mode Select: OFF=Manual, ON=Song            │
-│   └─────────┘                                              │
-└─────────────────────────────────────────────────────────────┘
-```
-
----
-
 ## 4. Setup Instructions
 
 ### Step 1: Download Files
