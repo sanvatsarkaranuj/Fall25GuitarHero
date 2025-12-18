@@ -271,8 +271,6 @@ ELSE
 END IF;
 ```
 
-**Key Feature:** Notes are held HIGH for 5.2ms to ensure the note column samples them (it samples every 2.6ms).
-
 #### `toneGenerator.vhd` - PWM Audio Generation
 This module was created from scratch to provide audio feedback and generates musical tones when notes are hit.
 
@@ -790,61 +788,8 @@ END IF;
 ```
 
 ---
-#### `ball.vhd` -> noteColumn: Rewrite for Four Circular Notes
 
-- Changes from bouncing ball to falling note column
-- Adds 600-bit shift register for note storage
-- Implemented circular note drawing
-- Adds note disappear logic after target zone
-
-```vhdl
--- Circular note drawing
-FOR offset IN -NOTE_RADIUS TO NOTE_RADIUS LOOP
-    row_check := pixel_row_int + offset;
-    IF note_col(row_check) = '1' THEN
-        dx := pixel_col_int - horiz_int;
-        dy := offset;
-        dist_sq := dx * dx + dy * dy;
-        IF dist_sq <= radius_sq THEN
-            note_on <= '1';  -- Inside circle
-        END IF;
-    END IF;
-END LOOP;
-
--- Notes disappear after target zone
-IF pixel_row_int < NOTE_DISAPPEAR_Y THEN
-    -- Draw note
-END IF;
-```
-
-#### `vga_top.vhd` - Mode Selection and Audio Integration
-
-Mode switch, song player integration, audio output, establishes module-hardware compatibility 
-
-- Added mode selection multiplexer (SW0)
-- Integrated project modules
-- Added debug LEDs
-- Connected all new signals
-
-```vhdl
--- Mode selection multiplexer
-note_input1 <= song_note1 WHEN (SW = '1' AND song_playing = '1') ELSE bt_strt1;
-
--- Audio integration
-sound_gen : toneGenerator
-PORT MAP(
-    clk => clk_in,
-    hit_green => hit_signals_out(0),
-    hit_red => hit_signals_out(1),
-    hit_purple => hit_signals_out(2),
-    hit_blue => hit_signals_out(3),
-    audio_out => AUD_PWM
-);
-
-AUD_SD <= '1';  -- Enable audio amplifier
-```
-
-###`vga_top.xdc` - Pin Assignments
+`vga_top.xdc` - Pin Assignments
 
 Mode switch, debug LEDs, audio output pins, scoreboard
 
