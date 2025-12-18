@@ -58,8 +58,6 @@ The goal of the game is to match the rythm of the track and catch the notes at t
    - Animated flames flicker on screen edges
    - Blue lane dividers and header bar
 
----
-
 ## 3. Required Hardware
 
 ### Nexys A7-100T FPGA Board
