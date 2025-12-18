@@ -129,8 +129,6 @@ Download all source files from this repository:
 - Press BTNC to start song (in song mode)
 - Use keypad bottom row (0, F, E, D) to hit notes
 
----
-
 ## 5. System Architecture
 
 ### Block Diagram
