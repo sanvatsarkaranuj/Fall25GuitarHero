@@ -468,13 +468,13 @@ AUD_SD <= '1';  -- Enable amplifier
 
 ## 10. Summary and Contributions
 
-### Caleb Romero
+### Anuj Sanvatsarkar
 - Designed `buttonTracker.vhd` (hit detection and scoring)
 - Designed `vgaCombiner.vhd` (visual effects and rendering)
 - Implemented flame animations and hit flash effects
 - Debugged timing synchronization issues
 
-### Jose Martinez-Ponce
+### Emre Cosgun
 - Designed `songPlayer.vhd` (automatic song playback)
 - Designed `toneGenerator.vhd` (PWM audio generation)
 - Created song patterns ("Ode to Joy" adaptation)
