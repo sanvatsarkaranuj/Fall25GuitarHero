@@ -29,16 +29,6 @@ Our project aims to recreate the classic Guitar Hero experience by attempting to
 - *Real-time Scoring* 
 - *Keypad Input*
 
-
-| Feature | Description |
-|---------|-------------|
-| **Four Note Columns** | Green, Red, Purple, and Blue lanes |
-| **Dual Game Modes** | Manual (practice) and Automatic (song) modes |
-| **Audio Feedback** | PWM-generated musical tones (C major chord) |
-| **Visual Effects** | Animated flames, hit flashes, circular notes |
-| **Real-time Scoring** | 7-segment display shows cumulative score |
-| **Keypad Input** | 4x4 matrix keypad simulates guitar buttons |
-
 ### How to Play
 
 The goal of the game is to match the rythm of the track and catch the notes at the right time to score as many points as possible during the level.
