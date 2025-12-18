@@ -61,8 +61,7 @@ The goal of the game is to match the rythm of the track and catch the notes at t
 ## 3. Required Hardware
 
 ### Nexys A7-100T FPGA Board
-![Nexys A7 Board]([images/nexys_a7.jpg](https://m.media-amazon.com/images/I/71AqT8JnX8L._AC_UF894,1000_QL80_.jpg
-))
+![Image](https://github.com/user-attachments/assets/5edc58a6-ec5b-46bc-b1d2-0fd3e77aa8ad)))
 
 ### VGA Monitor with VGA Cable (or VGA-to-HDMI Adapter)
 ![VGA Connection](images/vga_cable.jpg)
