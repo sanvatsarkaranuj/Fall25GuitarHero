@@ -241,7 +241,7 @@ END toneGenerator;
 
 ---
 
-## 7. Modifications from Starter Code
+## 7. Modifications from Starter Code and Module Design
 
 This project builds upon the Pong lab, particularly the ball.vhd module, as well as the ideas explored in the Fall 2024 Guitar Hero project highlighted in the project rubric. We made extensive modifications to stater code files, as well as drafting our own key modules in order to create a fully functional Guitar Hero gameplay experience.
 
