@@ -14,6 +14,10 @@ This project is a recreation of the classic Guitar Hero games implemented on the
 
 Our project aims to recreate the classic Guitar Hero experience by attempting to replicate its core gameplay mechanics, and emulate its art style. When the game is started, notes of four different colors, green, red, pink, and blue begin falling down from the top of the screen into four respective columns, and players must press the corresponding keypad buttons when the notes reach the target zone at the bottom of the screen in order to score points. The game features both a **manual practice mode** and an **automatic song mode** that a plays an automatically progressing map tied to a melody.
 
+### Reference: Original Guitar Hero
+
+![Guitar Hero Reference](images/guitar_hero_reference.jpg)
+
 ### Key Features
 
 - *Four Note Columns* 
@@ -37,10 +41,6 @@ The goal of the game is to match the rythm of the track and catch the notes at t
 - Notes fall automatically in a musical pattern ("Ode to Joy")
 - Catch the notes with the keypad to score points
 - Press BTNC again to restart after the song ends
-
-### Reference: Original Guitar Hero
-
-![Guitar Hero Reference](images/guitar_hero_reference.jpg)
 
 ---
 
