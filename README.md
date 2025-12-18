@@ -60,20 +60,20 @@ The goal of the game is to match the rythm of the track and catch the notes at t
 
 ## 3. Required Hardware
 
-### Nexys A7-100T FPGA Board
+- ### Nexys A7-100T FPGA Board
 ![Image](https://github.com/user-attachments/assets/5edc58a6-ec5b-46bc-b1d2-0fd3e77aa8ad)))
 
-### Monitor & VGA-HDMI Connection 
+- ### Monitor & VGA-HDMI Connection 
 ![Image](https://github.com/user-attachments/assets/04e7c01e-27d8-45ec-ad87-3c862c14134a)
 ![Image](https://github.com/user-attachments/assets/5c04fbfa-f294-402c-a5bc-fcfe01581eb6)
 
-### Pmod 4x4 Keypad (Connected to JA Header)
+- ### Pmod 4x4 Keypad (Connected to JA Header)
 ![Image](https://github.com/user-attachments/assets/510206a9-0853-4641-a737-f5f39d70fc10)
 
-### Speaker via 3.5mm Audio Jack
+ -### Speaker via 3.5mm Audio Jack
 ![Image](https://github.com/user-attachments/assets/53574b85-e8af-4d09-97da-558682b76f4f)
 
-### Hardware Connection Diagram
+- ### Hardware Connection Diagram
 
 ```
 ┌─────────────────────────────────────────────────────────────┐
