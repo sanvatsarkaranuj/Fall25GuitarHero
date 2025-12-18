@@ -60,7 +60,7 @@ The goal of the game is to match the rythm of the track and catch the notes at t
 
 - Nexys A7-100T FPGA Board
   
-   ![Image](https://github.com/user-attachments/assets/5edc58a6-ec5b-46bc-b1d2-0fd3e77aa8ad)))
+   ![Image](https://github.com/user-attachments/assets/5edc58a6-ec5b-46bc-b1d2-0fd3e77aa8ad)
 
 - Monitor & VGA-HDMI Connection
   
@@ -245,7 +245,7 @@ This project builds upon the Pong lab, particularly the ball.vhd module, as well
 
 
 #### `songPlayer.vhd` - Automatic Song Playback
-This module was created from scratc enable automatic song mode plays a 256-step song pattern.
+This module was created from scratch to enable automatic song mode and play a 256-step song pattern.
 
 ```vhdl
 -- Song patterns stored as 256-bit constants
@@ -877,25 +877,7 @@ If given more time, we would implement:
 
 ---
 
-## 10. Summary and Contributions
-
-### Anuj Sanvatsarkar
-- Designed `buttonTracker.vhd` (hit detection and scoring)
-- Designed `vgaCombiner.vhd` (visual effects and rendering)
-- Implemented flame animations and hit flash effects
-- Debugged timing synchronization issues
-
-### Emre Cosgun
-- Designed `songPlayer.vhd` (automatic song playback)
-- Designed `toneGenerator.vhd` (PWM audio generation)
-- Created song patterns 
-- GitHub documentation and README
-
-### Joint Effort
-- `ball.vhd` modifications (circular notes, note disappearing)
-- `vga_top.vhd` integration (mode selection, signal routing)
-- Testing and debugging
-- Hardware setup and demonstrations
+## 10. Summary and Contributions]
 
 ### Timeline
 
@@ -906,5 +888,23 @@ If given more time, we would implement:
 | Week 3 | Added song mode, audio generation |
 | Week 4 | Visual enhancements, debugging, optimization |
 | Final Week | Testing, documentation, presentation |
+
+### Anuj Sanvatsarkar
+- Designed `songPlayer.vhd` (automatic song playback)
+- Designed `toneGenerator.vhd` (PWM audio generation)
+- Designed `vgaCombiner.vhd` (visual effects and rendering)
+- Created song patterns 
+
+### Emre Cosgun
+- Designed `buttonTracker.vhd` (hit detection and scoring)
+- Designed `vgaCombiner.vhd` (visual effects and rendering)
+- Debugged timing synchronization issues
+
+### Joint Effort
+- `ball.vhd` modifications (circular notes, note disappearing)
+- `vga_top.vhd` integration (mode selection, signal routing)
+- GitHub documentation and README
+- Testing and debugging
+- Hardware setup and demonstrations
 
 ---
