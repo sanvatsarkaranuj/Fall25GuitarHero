@@ -68,6 +68,7 @@ The goal of the game is to match the rythm of the track and catch the notes at t
 ![Image](https://github.com/user-attachments/assets/5c04fbfa-f294-402c-a5bc-fcfe01581eb6)
 
 - Pmod 4x4 Keypad (Connected to JA Header)
+  
 ![Image](https://github.com/user-attachments/assets/510206a9-0853-4641-a737-f5f39d70fc10)
 
  -Speaker via 3.5mm Audio Jack
