@@ -4,7 +4,7 @@
 
 This project is a recreation of the classic Guitar Hero games implemented on the Nexys A7-100T FPGA using VHDL, featuring automatic song playback and animated visual effects.
 
-![Guitar Hero Logo](images/poster.png)
+<img width="612" height="448" alt="Image" src="https://github.com/user-attachments/assets/a8c2b02a-7f0f-4320-a923-29bcb2b0c1c5" />
 
 ### Gameplay Demo
 ![Song Mode Demo](images/song_mode.gif)
