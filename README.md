@@ -148,7 +148,6 @@ Download all source files from this repository:
 | **vga_sync** | `vga_sync.vhd` | Generates VGA timing signals (800×600@60Hz) |
 | **clk_wiz** | `clk_wiz_0.vhd` | Converts 100MHz to 40MHz pixel clock |
 
----
 
 ## 6. Inputs and Outputs
 
@@ -237,7 +236,7 @@ ENTITY toneGenerator IS
 END toneGenerator;
 ```
 
----
+
 
 ## 7. Modifications from Starter Code and Module Design
 
@@ -805,7 +804,6 @@ set_property -dict { PACKAGE_PIN J13 IOSTANDARD LVCMOS33 } [get_ports { LED[2] }
 set_property -dict { PACKAGE_PIN N14 IOSTANDARD LVCMOS33 } [get_ports { LED[3] }];
 ```
 
----
 
 ## 8. Challenges and Solutions
 
@@ -861,7 +859,7 @@ AUD_SD <= '1';  -- Enable amplifier
 -- Fixed divider: 100MHz / (2 × frequency)
 ```
 
----
+
 
 ## 9. Future Improvements
 
@@ -875,9 +873,9 @@ If given more time, we would implement:
 6. **Better Graphics** - Sprites instead of simple shapes
 7. **Two-Player Mode** - Split screen competition
 
----
 
-## 10. Summary and Contributions]
+
+## 10. Summary and Contributions
 
 ### Timeline
 
@@ -907,4 +905,4 @@ If given more time, we would implement:
 - Testing and debugging
 - Hardware setup and demonstrations
 
----
+
